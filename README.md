@@ -1,4 +1,4 @@
-# CLJS, Reagent, Graal Native, & AWS API Gateway, Lambda
+# Shadow CLJS, Reagent, Graal Native, & AWS API Gateway, Lambda
 
 
 Here is a very basic but complete example of a working shadow-cljs-based application
@@ -222,7 +222,7 @@ js files, css files, and images.
 
 1.  In API Gateway, in leftmost pane click the first Settings.  It is indented a bit.
 2.  You should see a set of panels.  A few are interesting but near the end is a panel
-    that named `Binary Media Types`. Click `Add Binary Medai Type`.
+    that named `Binary Media Types`. Click `Add Binary Media Type`.
 3.  Type in `*/*`.  This simply *allows* all media types to be binary.  Our code in
     proxy_lambda.clj explicitly binary encodes any response bodies that are streams.
 4.  Save changes.
