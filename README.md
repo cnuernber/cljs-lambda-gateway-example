@@ -2,7 +2,7 @@
 
 
 Here is a very basic but complete example of a working shadow-cljs-based application
-that works as a standalong server uberjar, standalone executable server, and a lambda
+that works as a standalone server uberjar, standalone executable server, and a lambda
 proxy extension using AWS API Gateway.
 
 
