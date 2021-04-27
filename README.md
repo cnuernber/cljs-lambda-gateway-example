@@ -247,3 +247,9 @@ are nicely done and since we are careful to write out JSON our logs are quite
 readable -- we can get into fancier ways to do structured logging that integrates with
 CloudWatch later.  We can also enable Cloudwatch logs for API gateway if we so
 choose.
+
+
+## Further Resources
+
+* [HolyLambda](https://github.com/FieryCod/holy-lambda) - supports babashka-based deployments.
+* [graalvm-clojure](https://github.com/BrunoBonacci/graalvm-clojure/blob/master/doc/clojure-graalvm-native-binary.md) - lots of examples of various projects.
