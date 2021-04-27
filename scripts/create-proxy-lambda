@@ -1,0 +1,5 @@
+#!/bin/bash
+
+aws lambda create-function --function-name forward-lambda \
+    --zip-file fileb://forward-lambda.zip --handler echo.function.handler --runtime provided \
+    --role arn:aws:iam::808739467117:role/lambda-role 

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+
+source scripts/activate-graal
+
+echo "Building uberjar"
+clojure -X:standalone-server
+
+
+graalvm/bin/native-image \
+    --report-unsupported-elements-at-runtime \
+    --initialize-at-build-time \
+    --no-fallback \
+    --no-server \
+    -H:+ReportExceptionStackTraces \
+    -H:IncludeResources='public/.*' \
+    --initialize-at-run-time=org.postgresql.sspi.SSPIClient \
+    --initialize-at-run-time=org.httpkit.client.ClientSslEngineFactory\$SSLHolder \
+    --trace-object-instantiation=sun.security.provider.NativePRNG \
+    --allow-incomplete-classpath \
+    --enable-http --enable-https \
+    -J-Dclojure.spec.skip-macros=true \
+    -J-Dclojure.compiler.direct-linking=true \
+    -jar target/standalone.jar target/standalone
