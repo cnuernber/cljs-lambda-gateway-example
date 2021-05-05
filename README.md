@@ -253,3 +253,5 @@ choose.
 
 * [HolyLambda](https://github.com/FieryCod/holy-lambda) - supports babashka-based deployments.
 * [graalvm-clojure](https://github.com/BrunoBonacci/graalvm-clojure/blob/master/doc/clojure-graalvm-native-binary.md) - lots of examples of various projects.
+* [babashka](https://github.com/babashka/babashka) - Compiled Clojure command line system with extensive extension system.
+* [avclj](https://github.com/cnuernber/avclj/) - In depth Clojure program using FFMpeg's shared libraries directly and compiling both an an executable and has an example of compiling Clojure to a library and calling it from C++.
