@@ -89,7 +89,7 @@ functionality.  The repo includes three scripts -
 * scripts/compile-standalone - Here is where the magic is.  This command works for Linux
   but I imagine various things need to change for Mac.  Ask in the Clojurians/graal
   slack channel for more information about this script; it packages resources and
-  has additions tools for postgres and httpkit's ssl engine as well as enabling
+  has additions for postgres and httpkit's ssl engine as well as enabling
   http,https support.
 
 
