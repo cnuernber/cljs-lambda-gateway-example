@@ -1,0 +1,7 @@
+#!/bin/bash
+
+XMX_VALUE="${XMX:-110m}"
+
+cd $LAMBDA_TASK_ROOT
+
+./service -Xmx$XMX_VALUE
